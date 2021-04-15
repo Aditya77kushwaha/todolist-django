@@ -31,12 +31,15 @@
 
         <hr style="color: rgb(14, 13, 13);" />
 
+        {% for x in data %}
         <div class="todolist" style="display: flex;">
-            {% for x in data %}
-            <h2 class="form-control">{{x.task}}</h2>
-            <a href="" style="text-decoration: none; color:white" class="btn btn-sm btn-danger">DELETE</a>
-            {% endfor %}
+
+            <h2 class="form-control" style="font-weight: 500;">{{x.task | title }}</h2>
+            <a href="" style="text-decoration: none; color:white; font-weight:600;"
+                class="btn btn-sm btn-danger">DELETE</a>
+
         </div>
+        {% endfor %}
     </div>
 
 
