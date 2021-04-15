@@ -35,8 +35,8 @@
         <div class="todolist" style="display: flex;">
 
             <h2 class="form-control" style="font-weight: 500;">{{x.task | title }}</h2>
-            <a href="" style="text-decoration: none; color:white; font-weight:600;"
-                class="btn btn-sm btn-danger">DELETE</a>
+            <a href="delete/{{x.id}}" style="text-decoration: none; color:white; font-weight:600;"
+                class="btn btn-sm btn-danger">DONE</a>
 
         </div>
         {% endfor %}
